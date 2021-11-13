@@ -1,20 +1,21 @@
 package com.tym.insttakeout.controller;
 
 import com.tym.insttakeout.entity.Customer;
+import com.tym.insttakeout.service.CustomerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class SignUpController {
-    @RequestMapping(value="/signup", method= RequestMethod.POST)
-    @ResponseStatus(value= HttpStatus.CREATED)
-    // @RequestBody is equal to using ObjectMapper to convert json response
-    // from Jackson library
-    public void signup(@RequestBody Customer customer) {
 
+    @Autowired
+    private CustomerService customerService;
+    @RequestMapping(value ="/signup", method=RequestMethod.POST)
+    @ResponseStatus(value = HttpStatus.CREATED)
+    public void signUp(@RequestBody Customer.CustomerBuilder builder) {
+        Customer customer = builder.build();
     }
+
 }

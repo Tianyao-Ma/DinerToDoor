@@ -46,6 +46,7 @@ public class Customer {
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
+
     public static class CustomerBuilder{
         private String email;
         private String firstName;
