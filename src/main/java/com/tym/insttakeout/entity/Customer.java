@@ -1,9 +1,18 @@
 package com.tym.insttakeout.entity;
 
-public class Customer {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.io.Serializable;
+
+@Entity
+@Table(name="customer")
+public class Customer implements Serializable {
+    private static final long serialVersionUID = 2652327633296064143L;
+    @Id
     private String email;
-    private final String firstName;
-    private final String lastName;
+    private  String firstName;
+    private  String lastName;
     private String password;
     private boolean enabled;
 
