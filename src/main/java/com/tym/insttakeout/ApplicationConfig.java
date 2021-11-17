@@ -11,10 +11,9 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-
+@PropertySource("classpath:application.properties")
 @Configuration
 @EnableWebMvc
-@PropertySource("file:application.properties")
 public class ApplicationConfig {
     @Value("${endpoint}") String RDS_ENDPOINT;
     @Value("${username}") String USERNAME;
