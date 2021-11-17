@@ -19,8 +19,6 @@ public class MenuItem implements Serializable {
     private double price;
     private String imageUrl;
 
-
-
     @ManyToOne
     @JsonIgnore
     private Restaurant restaurant;

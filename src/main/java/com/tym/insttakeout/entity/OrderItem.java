@@ -23,6 +23,24 @@ public class OrderItem implements Serializable {
     @JsonIgnore
     private Cart cart;
 
+    public MenuItem getMenuItem() {
+        return menuItem;
+    }
+
+    public OrderItem setMenuItem(MenuItem menuItem) {
+        this.menuItem = menuItem;
+        return this;
+    }
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public OrderItem setCart(Cart cart) {
+        this.cart = cart;
+        return this;
+    }
+
     public int getId() {
         return id;
     }
