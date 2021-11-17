@@ -1,7 +1,10 @@
 package com.tym.insttakeout.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.io.Serializable;
 
@@ -15,6 +18,21 @@ public class MenuItem implements Serializable {
     private String description;
     private double price;
     private String imageUrl;
+
+
+
+    @ManyToOne
+    @JsonIgnore
+    private Restaurant restaurant;
+
+    public Restaurant getRestaurant() {
+        return restaurant;
+    }
+
+    public MenuItem setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
+        return this;
+    }
 
     public int getId() {
         return id;

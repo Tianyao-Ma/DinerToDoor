@@ -1,5 +1,7 @@
 package com.tym.insttakeout.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -13,6 +15,13 @@ public class OrderItem implements Serializable {
 
     private int quantity;
     private double price;
+
+    @ManyToOne
+    private MenuItem menuItem;
+
+    @ManyToOne
+    @JsonIgnore
+    private Cart cart;
 
     public int getId() {
         return id;

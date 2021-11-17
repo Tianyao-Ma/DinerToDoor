@@ -1,8 +1,7 @@
 package com.tym.insttakeout.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.smartcardio.Card;
 import java.io.Serializable;
 
 @Entity
@@ -15,6 +14,20 @@ public class Customer implements Serializable {
     private  String lastName;
     private String password;
     private boolean enabled;
+
+    // build foreign key cart in customer that points to Cart entity;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(unique=true)
+    private Cart cart;
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public Customer setCart(Cart cart) {
+        this.cart = cart;
+        return this;
+    }
 
     private Customer(CustomerBuilder builder) {
         this.email = builder.email;
