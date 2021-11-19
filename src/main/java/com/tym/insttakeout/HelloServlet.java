@@ -21,15 +21,15 @@ public class HelloServlet extends HttpServlet {
         response.setContentType("application/json");
 
         ObjectMapper mapper = new ObjectMapper();
-        Customer customer = new Customer.CustomerBuilder().
-                email("lee@gamil.com")
-                .firstName("Fiona")
-                .lastName("Lee")
-                .password("123456")
-                .enabled(false)
-                .build();
-
-        response.getWriter().print(mapper.writeValueAsString(customer));
+//        Customer customer = new Customer.CustomerBuilder().
+//                email("lee@gamil.com")
+//                .firstName("Fiona")
+//                .lastName("Lee")
+//                .password("123456")
+//                .enabled(false)
+//                .build();
+//
+//        response.getWriter().print(mapper.writeValueAsString(customer));
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {

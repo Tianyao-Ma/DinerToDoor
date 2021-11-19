@@ -14,8 +14,8 @@ public class SignUpController {
     private CustomerService customerService;
     @RequestMapping(value ="/signup", method=RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public void signUp(@RequestBody Customer.CustomerBuilder builder) {
-        Customer customer = builder.build();
+    public void signUp(@RequestBody Customer customer) {
+        customerService.signUp(customer);
     }
 
 }
