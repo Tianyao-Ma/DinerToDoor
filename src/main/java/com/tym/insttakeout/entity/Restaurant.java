@@ -23,7 +23,6 @@ public class Restaurant implements Serializable {
     private String imageUrl;
 
     @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, fetch=FetchType.EAGER)
-    @JsonIgnore
     private List<MenuItem> menuItemList;
 
     public int getId() {
