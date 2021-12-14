@@ -21,7 +21,7 @@
 
 ## :film_strip: Project Demo
 <p align="center">
-<img src="https://user-images.githubusercontent.com/78308927/130557086-43903742-05e8-4fed-b054-deb8c05b8e63.gif" width="800">
+<img width="1192" alt="DinerToDoor DesignDOc" src="https://user-images.githubusercontent.com/78308927/145929139-755e3d9b-6ddd-4568-abec-919a6ee31bb0.png">
 </p>
 
 ## 🤖 Tech Stack
