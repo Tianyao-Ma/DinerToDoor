@@ -21,6 +21,9 @@
 
 ## :film_strip: Project Demo
 <p align="center">
+<img width="800" src="https://user-images.githubusercontent.com/78308927/146709862-62784bfe-03f5-41a7-9a96-130955fbd32e.gif">
+</p>
+<p align="center">
 <img width="1192" alt="DinerToDoor DesignDOc" src="https://user-images.githubusercontent.com/78308927/145929139-755e3d9b-6ddd-4568-abec-919a6ee31bb0.png">
 </p>
 
