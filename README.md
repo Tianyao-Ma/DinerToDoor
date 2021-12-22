@@ -44,7 +44,7 @@ This project aims to study and recreate the structure of online food ordering ap
 - **RESTful API via Spring MVC including registration, menu searching and ordering, checkout**.
 - **Hibernate annotation to access and operate the data storage**.
 - **Provides both authentication and authorization via Spring security to enhance protection**.
-- **All componentss are loosly decoupled using Spring framework**. 
+- **All components are loosely decoupled using Spring framework**. 
 - **Registered user can add items to the shopping carts and place orders**.
 - **Minimal, content-focused, and clutter-free frontEnd design using ReactJs and AntDesign**.
 
