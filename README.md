@@ -13,7 +13,7 @@
 
 ## 🎬 About the project
 <p align="justify"> 
-This project aims to study and recreate the structure of the trendy food ordering system. Using the Spring framework core technologies to loosely decouple all components in the application, and utilizing Hibernate to access and operate data storage, this web application allows users to register, login, browse through menus, place items to cart, and place orders. 
+This project aims to study and recreate the structure of online food ordering applications. Using Spring framework to loosely decouple all components in the application, and utilizing Hibernate to access and operate data storage, this web application allows users to register, login, browse through menus, place items to cart, and place orders. 
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
